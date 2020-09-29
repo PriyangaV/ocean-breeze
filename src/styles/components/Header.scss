@@ -1,0 +1,80 @@
+/* navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 0.75rem 2rem;
+  background: $darkBlack;
+  z-index: 1;
+}
+.nav-header {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav-header a {
+  font-size: 3rem;
+  font-family: $ff-secondary;
+  color: $primaryColor;
+  text-decoration: none;
+}
+.nav-btn {
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  outline: none;
+  font-size: 1.5rem;
+  color: $offWhite;
+}
+.nav-icon {
+  font-size: 1.5rem;
+  color: $primaryColor;
+}
+.nav-links {
+  height: 0;
+  overflow: hidden;
+  transition: $mainTransition;
+  list-style-type: none;
+}
+.nav-links a {
+  display: block;
+  text-decoration: none;
+  padding: 1rem 0;
+  color: $offWhite;
+  transition: $mainTransition;
+  text-align: center;
+  font-size: 1.25rem;
+  letter-spacing: $mainSpacing;
+}
+.nav-links a:hover {
+  color: $primaryColor;
+}
+
+.show-nav {
+  height: 100px;
+}
+@media screen and (min-width: 768px) {
+  .nav-btn {
+    display: none;
+  }
+  .nav-center {
+    max-width: 1170px;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .nav-links {
+    height: auto;
+    display: flex;
+    margin-left: 4rem;
+    justify-content: center;
+    align-items: center;
+  }
+  .nav-links a {
+    margin: 0 1rem;
+    padding: 0.5rem 0;
+  }
+}
+/* end of navbar */

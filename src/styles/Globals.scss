@@ -1,0 +1,142 @@
+/* reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* globals */
+body {
+  padding-top: 91px;
+  color: $mainBlack;
+  background: $mainWhite;
+  font-family: $ff-primary, Verdana, Geneva, Tahoma, sans-serif;
+  line-height: 1.4;
+  user-select: none;
+}
+
+img {
+  display: block;
+  width: 100%;
+  object-fit: cover;
+}
+
+a {
+  font-weight: normal;
+}
+
+p,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: 100;
+}
+h1 {
+  font-size: 3em;
+  line-height: 1;
+  margin-bottom: 0.5em;
+}
+h2 {
+  font-size: 2em;
+  margin-bottom: 0.75em;
+}
+h3 {
+  font-size: 1.5em;
+  line-height: 1;
+  margin-bottom: 1em;
+}
+h4 {
+  font-size: 1.2em;
+  line-height: 1.25;
+  margin-bottom: 1.25em;
+}
+h5 {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+  line-height: 1.75;
+}
+h6 {
+  font-size: 1em;
+  margin-bottom: 1.5em;
+}
+
+.btn-primary {
+  display: inline-block;
+  text-decoration: none;
+  letter-spacing: $mainSpacing;
+  color: $mainBlack;
+  background: $primaryColor;
+  padding: 0.4rem 0.9rem;
+  border: 3px solid $primaryColor;
+  transition: $mainTransition;
+  text-transform: uppercase;
+  cursor: pointer;
+}
+.btn-primary:hover {
+  background: transparent;
+  color: $primaryColor;
+  border-radius: $radius;
+}
+.loading {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 3rem;
+  position: relative;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, 50%);
+  width: 100%;
+}
+
+.loading img {
+  margin: 2rem auto;
+  width: 5rem;
+}
+
+.featured-rooms-center .loading {
+  text-transform: capitalize;
+  text-align: center;
+  margin-top: 3rem;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 100%;
+}
+
+.error {
+  text-align: center;
+  text-transform: uppercase;
+  margin: 2rem 0;
+}
+.empty-search {
+  text-align: center;
+  text-transform: capitalize;
+  margin: 2rem 0;
+  padding: 1rem;
+  letter-spacing: $mainSpacing;
+}
+/* end of globals */
+
+/* title */
+.section-title {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+.section-title h4 {
+  font-size: 4rem;
+  letter-spacing: $mainSpacing;
+  text-transform: capitalize;
+  margin-bottom: 1rem;
+  font-family: $ff-secondary;
+}
+.section-title div {
+  width: 5rem;
+  height: 5px;
+  margin: 0 auto;
+  background: $primaryColor;
+}
+/* end of title */

@@ -1,0 +1,106 @@
+/* services */
+.services {
+  padding: 2rem 0;
+  /* background: rgba(0, 0, 0, 0.9); */
+  text-align: center;
+  color: $darkBlack;
+}
+.service {
+  position: relative;
+  width: 100%;
+  transition: all 0.5s linear;
+}
+.service .details {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  transform: scale(0);
+  background: rgba(0, 0, 0, 0.7);
+  transition: all 0.5s linear;
+  display: flex;
+  flex-direction: column;
+  padding: 1rem;
+}
+
+.services-center {
+  width: 90vw;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(20rem, 1fr));
+  grid-gap: 1rem;
+}
+.service span {
+  display: inline-block;
+  color: $primaryColor;
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+.services h6 {
+  letter-spacing: $mainSpacing;
+  text-transform: capitalize;
+  color: $offWhite;
+}
+.services p {
+  width: 90%;
+  margin: 0 auto;
+  letter-spacing: $mainSpacing;
+  text-align: center;
+  color: $offWhite;
+}
+
+.service img {
+  max-height: 20rem;
+  height: 100%;
+  object-fit: cover;
+  opacity: 0.8;
+}
+
+.service:hover img {
+  opacity: 0.5;
+}
+
+.service:hover .details {
+  transform: scale(1);
+}
+
+@media screen and (min-width: 992px) {
+  .services-center {
+    width: 95vw;
+    max-width: 1300px;
+    display: grid;
+    gap: 1rem;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 400px);
+    grid-template-areas: 'a b b c' 'd e e f';
+  }
+  .service img {
+    max-height: 45rem;
+  }
+
+  .service-1 {
+    grid-area: a;
+  }
+  .service-2 {
+    grid-area: b;
+  }
+  .service-3 {
+    grid-area: c;
+  }
+  .service-4 {
+    grid-area: d;
+  }
+  .service-5 {
+    grid-area: e;
+  }
+  .service-6 {
+    grid-area: f;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .services p {
+    width: 100%;
+  }
+}
+/* end of services */
